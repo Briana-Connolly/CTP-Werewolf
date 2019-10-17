@@ -1,0 +1,25 @@
+*{
+  background-color: #720E49;
+}
+
+.btn{
+  color: #F8F7FA;
+  background-color: #0A0908;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  Font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  padding: 30px;
+  border-radius: 50px 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
