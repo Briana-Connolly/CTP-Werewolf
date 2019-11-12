@@ -1,3 +1,40 @@
-*{
-    background-color: red;
+
+  .minionScreen{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .title{
+    font-size: 55px;
+    margin-bottom: 0%;
+  }
+
+  .description{
+    font-size: 35px;
+    margin-top: 0%;
+  }
+
+  .box{
+    padding: 50px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 20px 20px;
+    background-color: #42033D;
+    display: inline-block;
+    color: #F8F7FA;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .redBlock{
+    padding: 50px;
+    margin: 20px;
+    font-size: 20px;
+    border-radius: 20px 20px;
+    background-color: #BA0000;
+    display: inline-block;
+    color: #F8F7FA;
+  }
+
+  .result{
+    font-size: 40px;;
   }

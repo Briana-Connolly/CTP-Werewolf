@@ -7,6 +7,9 @@ import logo from './images/WWLogo.png'
 
 
 class HomeScreen extends React.Component {
+    componentDidMount() {
+        document.body.style.background = "#42033D";
+    }
     render() {
         return (
             <div>
