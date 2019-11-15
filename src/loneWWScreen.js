@@ -24,12 +24,20 @@ class LoneWWScreen extends React.Component {
         this.state.b = 0;
 
         this.toggleDiv = this.toggleDiv.bind(this)
+        
+        this.state = {
+            isButtonDisabled: false
+          }
     }
 
     toggleDiv = (num) => {
         this.state.b = num;
         const { show } = this.state;
         this.setState({ show: !show })
+        
+        this.setState({
+            isButtonDisabled: true
+          });
     }
 
     render() {
@@ -39,9 +47,15 @@ class LoneWWScreen extends React.Component {
                 <p className="description">Pick which card from the middle you would like to see</p>
                 <br></br>
                 <br></br>
-                <button className="box" onClick={() => this.toggleDiv(1)}>Middle 1</button>
-                <button className="box" onClick={() => this.toggleDiv(2)}>Middle 2</button>
-                <button className="box" onClick={() => this.toggleDiv(3)}>Middle 3</button>
+                <button className="box" 
+                    onClick={() => this.toggleDiv(1)}
+                    disabled={this.state.isButtonDisabled}>Middle 1</button>
+                <button className="box" 
+                    onClick={() => this.toggleDiv(2)}
+                    disabled={this.state.isButtonDisabled}>Middle 2</button>
+                <button className="box" 
+                    onClick={() => this.toggleDiv(3)}
+                    disabled={this.state.isButtonDisabled}>Middle 3</button>
                 <br></br>
                 <br></br>
                 <div className="result">{this.state.show && Players(this.state.b)}</div>
