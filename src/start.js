@@ -13,6 +13,14 @@ class StartScreen extends React.Component {
         return (
             <div>
                 <div>
+                    <Link to="/seer" className="btn btn-primary">Seer</Link>
+                </div>
+                <br></br>
+                <div>
+                    <Link to="/villager" className="btn btn-primary">Villager</Link>
+                </div>
+                <br></br>
+                <div>
                     <Link to="/minion" className="btn btn-primary">Minion</Link>
                 </div>
                 <br></br>
@@ -22,6 +30,14 @@ class StartScreen extends React.Component {
                 <br></br>
                 <div>
                     <Link to="/robber" className="btn btn-primary">Robber</Link>
+                </div>
+                <br></br>
+                <div>
+                    <Link to="/werewolf" className="btn btn-primary">Werewolf</Link>
+                </div>
+                <br></br>
+                <div>
+                    <Link to="/mason" className="btn btn-primary">Mason</Link>
                 </div>
             </div>
         );
